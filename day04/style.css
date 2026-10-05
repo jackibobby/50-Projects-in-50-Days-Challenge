@@ -1,104 +1,108 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
-    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e293b, #334155);
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #111827;
-    font-family: Arial, sans-serif;
+    min-height: 100vh;
 }
 
+/* Calculator */
 .calculator {
     width: 350px;
-    background: #1f2937;
+    background: #ffffff;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
+/* Display */
 .display {
     margin-bottom: 20px;
 }
 
 #screen {
     width: 100%;
-    height: 90px;
+    height: 80px;
     border: none;
-    outline: none;
     border-radius: 12px;
-    background: #0f172a;
-    color: white;
-    font-size: 36px;
+    background: #f1f5f9;
     text-align: right;
     padding: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e293b;
+    outline: none;
 }
 
+/* Buttons Grid */
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
 }
 
+/* General Button Style */
 button {
     height: 65px;
     border: none;
     border-radius: 12px;
-    background: #374151;
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: 0.2s;
+    background: #e2e8f0;
+    color: #1e293b;
+    transition: all 0.2s ease;
 }
 
 button:hover {
-    background: #4b5563;
-    transform: scale(1.04);
+    transform: translateY(-2px);
+    background: #cbd5e1;
 }
 
 button:active {
-    transform: scale(0.95);
+    transform: scale(0.96);
 }
 
+/* Operators */
 .operator {
-    background: #f57c00;
+    background: #3b82f6;
+    color: white;
 }
 
 .operator:hover {
-    background: #ff9800;
+    background: #2563eb;
 }
 
-.clear {
-    background: #dc2626;
-}
-
-.clear:hover {
-    background: #ef4444;
-}
-
+/* Equal Button */
 .equal {
-    background: #16a34a;
+    background: #10b981;
+    color: white;
 }
 
 .equal:hover {
-    background: #22c55e;
+    background: #059669;
 }
 
+/* Clear Button */
+.clear {
+    background: #ef4444;
+    color: white;
+}
+
+.clear:hover {
+    background: #dc2626;
+}
+
+/* Zero Button */
 .zero {
     grid-column: span 2;
-}
-
-@media (max-width: 400px) {
-    .calculator {
-        width: 90%;
-    }
-
-    button {
-        height: 60px;
-    }
 }

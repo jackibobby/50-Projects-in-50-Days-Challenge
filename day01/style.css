@@ -20,8 +20,8 @@ body {
 /* Navigation */
 
 nav {
-    background-color: #111;
-    color: white;
+    background-color:  hsl(64, 95%, 48%);
+    color: #090505;
 
     display: flex;
     justify-content: space-between;
@@ -48,7 +48,7 @@ nav ul li {
 
 
 nav ul li a {
-    color: white;
+    color:  #090505;
     text-decoration: none;
 }
 
@@ -108,8 +108,8 @@ nav ul li a:hover {
 /* Button */
 
 .btn {
-    background-color: #111;
-    color: white;
+    background-color:  hsl(64, 95%, 48%);
+    color:  #090505;
 
     text-decoration: none;
 
@@ -206,9 +206,9 @@ section h2 {
 /* Footer */
 
 footer {
-    background-color: #111;
+    background-color: hsl(64, 95%, 48%);
 
-    color: white;
+    color:  #090505;
 
     text-align: center;
 
